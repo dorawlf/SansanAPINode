@@ -24,7 +24,7 @@ var originalURL = "https://api.sansan.com/v2.5/bizCards?"
                           +"orderDirection=asc&"
                           +"limit=300";
 
-var byIDURL = "https://api.sansan.com/v2.5/bizCards/60C36C6C0D590234D29E665BE8A0E6C4";
+var byIDURL = "https://api.sansan.com/v2.5/bizCards/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
 //var searchURL = byIDURL;
 var searchURL = originalURL;
@@ -32,12 +32,12 @@ var searchURL = originalURL;
 console.log(searchURL);
 
 request({
-  //url: "https://api.sansan.com/v2.5/persons/9e190a8b09ea67dfc65ac5eb506d49cb",
+  //url: "https://api.sansan.com/v2.5/persons/xxxxxxxxxxxxxxxxxxxxxx",
   url:searchURL,
   headers: {
       "content-type": "application/json",
-       //"X-Sansan-Api-Key": "a2a61b658d4847daabbcb1d2115b6c37"//demo
-     "X-Sansan-Api-Key": "c1368a6decbc46dd9b5a093d4493c981"//product
+       //"X-Sansan-Api-Key": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"//demo
+     "X-Sansan-Api-Key": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"//product
   },
   method:'GET'
 }, function(error, response, body) {
